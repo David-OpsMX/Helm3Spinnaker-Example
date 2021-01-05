@@ -16,3 +16,9 @@ Run `./install-spinnaker.sh` and then apply `spinnaker.yml` using your Kubernete
 
 ## Access
 Spinnaker should now be accessible at `http://spinnaker.BASE.URL`
+
+## Configuration
+Run the following command to set your halyard pod. (Add namspace as necessary)
+`HALYARD_POD=$(kubectl get pods --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}' | grep halyard)`
+
+Then you can `kubctl exec -it $HALYARD_POD -- bash`
