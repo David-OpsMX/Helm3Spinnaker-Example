@@ -21,4 +21,4 @@ Spinnaker should now be accessible at `http://spinnaker.BASE.URL`
 Run the following command to set your halyard pod. (Add namspace as necessary)
 `HALYARD_POD=$(kubectl get pods --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}' | grep halyard)`
 
-Then you can `kubctl exec -it $HALYARD_POD -- bash`
+Then you can `kubectl exec -it $HALYARD_POD -- bash`
