@@ -12,7 +12,7 @@ Change all instances of `testthe.site` to your base url
 ```
 
 ## Execution
-Run `./install-spinnaker.sh' and then apply `spinnaker.yml` using your Kubernetes control of Choice.
+Run `./install-spinnaker.sh` and then apply `spinnaker.yml` using your Kubernetes control of Choice.
 
 ## Access
 Spinnaker should now be accessible at `http://spinnaker.BASE.URL`
